@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eneb Zewdu – Front-End Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Eneb Z.</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills-experience.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Hi, I’m Eneb Zewdu</h1>
+            <h2><span id="typing-subtitle"></span></h2>
+            <a href="projects.html" class="btn">View My Work</a>
+        </div>
+        <img src="hero-image.png" alt="Abstract technology and code" class="hero-bg-img" data-aos="fade-in" data-aos-delay="200">
+        <div class="hero-overlay"></div>
+    </header>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          duration: 1000,
+          once: true,
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed('#typing-subtitle', {
+            strings: ['Front-End Developer', 'Creating sleek & interactive web experiences.'],
+            typeSpeed: 50,
+            backSpeed: 25,
+            loop: true,
+            startDelay: 500,
+        });
+    </script>
+</body>
+</html>
